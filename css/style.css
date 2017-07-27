@@ -258,6 +258,7 @@ a:hover, a:active {
   color: #464646;
   font-size: 22px;
   margin: 0;
+  line-height: 30px;
 }
 .post .post-title a {
   text-decoration: none;
@@ -453,7 +454,7 @@ a:hover, a:active {
   height: 32px;
   border-radius: 300px;
   background-color: #3E3E3E;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .evernote a {
   color: #fff;
@@ -470,7 +471,7 @@ a:hover, a:active {
   height: 32px;
   border-radius: 300px;
   background-color: #ED6243;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .weibo a {
   color: #fff;
@@ -485,7 +486,7 @@ a:hover, a:active {
   height: 32px;
   border-radius: 300px;
   background-color: #59C0FD;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .twitter a {
   color: #fff;
@@ -693,7 +694,10 @@ a.btn {
     display: none;
   }
 
-  .share {
-    display: grid;
-  }
+}
+
+/* 自己的 */
+blockquote {
+  border-color:'D6DBDFd';
+  margin-left: 0;
 }

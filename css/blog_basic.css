@@ -221,7 +221,7 @@ html {
       h1, h2, h3, h4, h5, h6 {
         text-rendering: optimizeLegibility;
         line-height: 1;
-        margin: 2rem 0; }
+        margin: 2rem 0 1rem 0; }
 
         h1 {
           font-size: 2.1rem;
@@ -288,7 +288,7 @@ dl dt {
       blockquote {
         box-sizing: border-box;
         margin: 1.6em 0 1.6em -2.2em;
-        padding: 0 0 0 1em;
+        padding: 0 0.2em 0 1em;
         margin-left:0;
         border-left: #D6DBDF 0.4em solid;
         background-color:#F1F3F0;}
