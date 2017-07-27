@@ -16,6 +16,23 @@
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale
 }
+.wiiii {
+	display:inline-block;
+	width:14px;height:14px;
+	vertical-align: middle;
+}
+.be {
+	background:url(../images/behance.svg) center no-repeat / contain;
+}
+.UI {
+	background:url(../images/UI.svg) center no-repeat / contain;
+}
+.wb {
+	width: 16px;
+    height: 16px;
+	background:url(../images/weibo.svg) center no-repeat ;
+	background-size: 100%;
+}
 .fa-lg {
 	font-size:1.33333333em;
 	line-height:.75em;
