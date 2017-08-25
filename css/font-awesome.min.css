@@ -22,11 +22,17 @@
 	vertical-align: middle;
 }
 .be {
-	background:url(../images/behance.svg) center no-repeat / contain;
+	width: 16px;
+    height: 16px;
+	background:url(../images/behance.svg) center no-repeat;
+	background-size: 100%;
 }
 .UI {
-	background:url(../images/UI.svg) center no-repeat / contain;
-}
+	width: 16px;
+    height: 16px;
+	background:url(../images/UI.svg) center no-repeat;
+	background-size: 100%;
+}	
 .wb {
 	width: 16px;
     height: 16px;
