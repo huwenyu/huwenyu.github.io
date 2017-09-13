@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="John Doe"><title>输入控件 · Wiiii</title><meta name="description" content="后台系统中，存在大量的选择设置，合理的应用控件是做出良好产品的基本功，本章梳理了常见的选择控件，也是个人长时间产品设计过程中对这些控件的梳理认知和总结，自然有不全之处，但也会随后期个人成长不断优化。
+定义输入控件：允许用户在应用中输入信息。  
+常见类型
+输入框
+步进器/微调器
+滑块
+
+详解Inpu"><meta name="keywords"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css?_r=0.6556546289704079"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><a href="/"><img src="/images/logo@2x.png" style="width:132px;"><h3 title=""><a href="/">Wiiii</a><p style="color:#2c3e50">设以为计，格物求索</p></h3></a></div></div><ul class="social-links"><li><a href="https://www.behance.net/2272595732ae80" target="_blank"><i class="be wiiii"></i></a></li><li><a href="http://i.ui.cn/ucenter/234537.html" target="_blank"><i class="UI wiiii"></i></a></li><li><a href="http://weibo.com/u/5936786201/home?wvr=5" target="_blank"><i class="wb wiiii"></i></a></li></ul><div class="footer"><span><span>©2017 Wenyu Hu </span></span><div class="by_farbox"><span>WeChat Subscription：Int-PD</span></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/about">关于</a></li></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>输入控件</a></h3></div><div class="post-content"><p>后台系统中，存在大量的选择设置，合理的应用控件是做出良好产品的基本功，本章梳理了常见的选择控件，也是个人长时间产品设计过程中对这些控件的梳理认知和总结，自然有不全之处，但也会随后期个人成长不断优化。</p>
+<h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>输入控件：允许用户在应用中输入信息。  </p>
+<h4 id="常见类型"><a href="#常见类型" class="headerlink" title="常见类型"></a>常见类型</h4><ol>
+<li>输入框</li>
+<li>步进器/微调器</li>
+<li>滑块</li>
+</ol>
+<h4 id="详解"><a href="#详解" class="headerlink" title="详解"></a>详解</h4><h3 id="Input-输入框"><a href="#Input-输入框" class="headerlink" title="Input 输入框"></a>Input 输入框</h3><p>允许用户输入和编辑文本的区域。</p>
+<h4 id="外观形式"><a href="#外观形式" class="headerlink" title="外观形式"></a>外观形式</h4><p>1.单行文本框,  用于输入少量的文本</p>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170913150526918769465.png" alt="20170913150526918769465.png">   </p>
+<p>2.多行文本，用于输入长字符串，多行文本区域显示</p>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170913150526919551379.png" alt="20170913150526919551379.png"></p>
+<p>3.富文本，允许使用附加的格式、内联图像/链接等文本输入</p>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170913150526920258603.png" alt="20170913150526920258603.png"></p>
+<h4 id="最佳做法"><a href="#最佳做法" class="headerlink" title="最佳做法"></a>最佳做法</h4><ul>
+<li>容错格式，允许用户输入多种格式，并智能的处理从而满足程序的数据要求。例如电话输入，允许用户输入空格和-，系统后台自动清理数据以满足格式要求，而不是报错提示。</li>
+<li>对于简短、固定的单行输入可采用结构化格式，通过潜在的限制使输入的字符数量、类型不易出错，并使用户能够直观的看到输入格式。例如银行卡号、身份证、时间等信息。</li>
+</ul>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170913150526988626680.png" alt="20170913150526988626680.png"></p>
+<ul>
+<li>掩码，对于重要的私人信息或数据应该给予掩码保护。例如密码、电话及身份证等信息，也分为全部掩码及部分掩码。对于密码输入可提供“查看”操作，以便用户确认。</li>
+</ul>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170913150527009222833.png" alt="20170913150527009222833.png"></p>
+<ul>
+<li>对于搜索操作的文本框，可提供清空快捷操作，从而方便用户快速更换关键词。</li>
+</ul>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170913150527085362529.png" alt="20170913150527085362529.png"></p>
+<ul>
+<li>标签起到了向用户指示所要输入的内容的作用。输入框的标签，应使用名词或简洁的名词短语，放置在输入框的左边或上边。</li>
+<li>占位符不可替代标签，占位符会在用户输入字符后消失。占位符的功能呢是通过一个简短的提示来帮助用户输入数据。提示可以是示例值或对预期格式的简要描述。占位符的颜色使用较浅的色值，以避免给人默认值的误导。</li>
+<li>帮助文字用于为填写提供更多的上下文背景或指导。常见的形式有：默认显示，键入显示，悬停或点击显示。  </li>
+</ul>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/2017091315052804275705.png" alt="2017091315052804275705.png"></p>
+<ul>
+<li>必填，指示用户必选填写的内容。在标签末尾显示一个红色的“*”星号，或者使用文本表达，如果整个表单都是必填则无需标识。</li>
+</ul>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170913150527183171308.png" alt="20170913150527183171308.png"></p>
+<ul>
+<li>若输入区域设置了字符或字数限制，应给予一定的提示说明，当用户输入不规范的字符或超出字数限制时应给予清除。例如记数器，在用户输入每个字符时动态更新。</li>
+<li>输入验证分为主动验证和被动验证两种。<ul>
+<li>主动验证在用户输入的过程中就进行了验证。例如只接受数字的输入框，在输入字符或特殊符号时会被主动清除，且给予提示说明，告知用户信息的输入要求或规则。</li>
+<li>被动验证在键出（失去焦点）时或命令操作（例如提交）后才进行验证操作。</li>
+</ul>
+</li>
+<li>对于错误提示最好的方式是放在控件旁边进行提示，这样用户可快速进行定位更正。关于错误提示文本，应该给予用户解决问题的方法和指导而不是仅仅告诉用户发生了错误（例如密码错误，而是提示请输入6位以上字符），且文本在正确详细的情况下保持简短易读，且避免机器用语。下图是常见错误提示位置：</li>
+</ul>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170913150528158024386.png" alt="20170913150528158024386.png"></p>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170913150528186451856.png" alt="20170913150528186451856.png"></p>
+<ul>
+<li>用户与输入框交互时，请提供良好的视觉反馈，且输入框本身状态提供良好的能供性（常规有：默认、悬停、键入和禁用；验证状态有：提醒、报错和成功）。</li>
+</ul>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170913150527253328717.png" alt="20170913150527253328717.png"></p>
+<ul>
+<li>对于多行文本可根据需求提供改变区域的操作，以显示更多内容。分为手动和自动两种，具体选择需要根据空间布局，内容要求进行决择，手动给予用户更大的自由度，自动则在根据内容实际所需。<ul>
+<li>拖拽控件：只改变高度和高度宽度均可调整两种。在外观和功能上是均有区别，请正确使用请勿混用，以提供符合预期及认知的模式，且设定最大范围。</li>
+<li>输入框自动增长（根据输入内容进行高度变化），只可改变输入框高度，请设定最大高度。</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170913150527184211531.png" alt="20170913150527184211531.png"> </p>
+<ul>
+<li>对于输入框请设置合理的内边距。贴合边框的文本会导致视觉读取困难，且给人简陋之感。</li>
+</ul>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170913150527084164906.png" alt="20170913150527084164906.png"></p>
+<h3 id="Stepper-步进器-微调器"><a href="#Stepper-步进器-微调器" class="headerlink" title="Stepper 步进器/微调器"></a>Stepper 步进器/微调器</h3><p>以微小的浮动改变数值，步进器包括一个输入区域、增加和减少按钮。</p>
+<h4 id="外观形式-1"><a href="#外观形式-1" class="headerlink" title="外观形式"></a>外观形式</h4><p><img src="http://ot2bs1soo.bkt.clouddn.com/20170908150485587431438.png" alt="20170908150485587431438.png"></p>
+<h4 id="最佳做法-1"><a href="#最佳做法-1" class="headerlink" title="最佳做法"></a>最佳做法</h4><ul>
+<li>步进器用于需要微调数字值的情况，且输入值有大小范围的限制及字符限制需求。</li>
+<li>步进器默认始终包含一个值，默认值为一般用户普遍设置的、你希望用户选择最佳值或较为安全的数值（例如最小值）。</li>
+<li>允许通过点击增加/减少按钮，键入数字，使用键盘快捷键（上/下，页面上/下）改变数值。</li>
+<li>为步进器设置最大和最小值。达到最大/最小值时，增加/减少按钮和上/下键盘将被禁用。</li>
+<li>用户与步进器交互时，请提供良好的视觉反馈。增加/减少按给予默认、悬停、选中和禁用状态，输入区域给予默认、键入和报错状态。</li>
+</ul>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/2017091315052832982527.png" alt="2017091315052832982527.png"></p>
+<ul>
+<li>请设置输入区域的字符限制。一般为0-9和-，+字符，若不允许负值，那就只可输入0-9。当输入不规范的字符时清除或显示最小值，输入的值超过最大值则显示为最大值，并显示工具提示说明输入范围。</li>
+</ul>
+<hr>
+<h4 id="问题：当用户输入不合格的值，再未键出的情况下滑出步进器的视图区域点击保存，如何更好的提示报错？"><a href="#问题：当用户输入不合格的值，再未键出的情况下滑出步进器的视图区域点击保存，如何更好的提示报错？" class="headerlink" title="问题：当用户输入不合格的值，再未键出的情况下滑出步进器的视图区域点击保存，如何更好的提示报错？"></a>问题：当用户输入不合格的值，再未键出的情况下滑出步进器的视图区域点击保存，如何更好的提示报错？</h4><p>滑到错误提示区域并提示错误信息。</p>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170908150485336823651.gif" alt="20170908150485336823651.gif"></p>
+<hr>
+<h3 id="Slider-滑块"><a href="#Slider-滑块" class="headerlink" title="Slider 滑块"></a>Slider 滑块</h3><p>从一个范围值中进行滑动选择的控件。通常由一条水平线（水平或垂直）、可移动手柄和标签（有滑块标签、范围标签、值标签）组成。</p>
+<h4 id="外观形式-2"><a href="#外观形式-2" class="headerlink" title="外观形式"></a>外观形式</h4><p>单滑块，选择单一的值</p>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170911150512458975923.png" alt="20170911150512458975923.png"></p>
+<p>双滑块，用于选择值的范围</p>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170911150512470856551.png" alt="20170911150512470856551.png"></p>
+<p>分段式，不允许选择任意值，默认贴靠分段的值</p>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170911150512231187702.png" alt="20170911150512231187702.png"></p>
+<p>垂直和水平，根据值的特点及页面情况更加合适的布局</p>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170911150512233118923.png" alt="20170911150512233118923.png"></p>
+<p>图标数值文本</p>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170911150512234971555.png" alt="20170911150512234971555.png"></p>
+<p>带有输入框，可输入文本字段，输入数据与滑块同步</p>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170911150512298959821.png" alt="20170911150512298959821.png"></p>
+<h4 id="最佳做法-2"><a href="#最佳做法-2" class="headerlink" title="最佳做法"></a>最佳做法</h4><ul>
+<li>当用户设置连续值（如音量或亮度）或一系列离散值（如屏幕分辨率设置）时，可使用滑块。</li>
+<li>滑块是一种有界的选择或输入控件，其范围和选择数值的位置均得到了可视化的呈现。根据具体的使用情景我们将滑块细分为：单滑块（单值）、双滑块（可选择范围）、分段式滑块（非范围内的任意值）和带输入框滑块（和输入控件保持同步），以及相应的水平或垂直方向。对于书写及阅读习惯从左向右的人群而言，值得范围一般为左小右大，上大下小。  </li>
+<li>如果你不允许滑块选取任意值，请使用分段的步骤点。</li>
+<li>如果滑块可编辑，当鼠标悬停在手柄上时，手柄高亮显示，并出现手型光标。  </li>
+</ul>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170911150512210727193.png" alt="20170911150512210727193.png"></p>
+<ul>
+<li>允许用户使用拖拽和点击改变手柄的位置。</li>
+<li>在某些情况下，滑块直接充当为命令控件，在用户选择时或选择后，操作结果即时生效。 例如音量控件。</li>
+<li>当滑块上没有其实时显示滑块值的地方时，请使用值标签显示滑块的当前值。</li>
+</ul>
+<p><img src="http://ot2bs1soo.bkt.clouddn.com/20170911150512220132145.png" alt="20170911150512220132145.png"></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2017-09-13</span><i class="fa fa-tag"></i><a href="/tags/产品设计/" title="产品设计" class="tag">产品设计 </a><a href="/tags/杂谈/" title="杂谈" class="tag">杂谈 </a></div></div></div></div><div class="share"><div class="evernote"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></div><div class="weibo"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></div><div class="twitter"><a href="http://twitter.com/home?status=,http://yoursite.com/2017/09/13/输入控件/,Wiiii,输入控件,;" class="fa fa-twitter"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a role="navigation" href="/2017/09/07/推动产品这个箱子/" title="推动产品这个箱子" class="btn">下一篇</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>
